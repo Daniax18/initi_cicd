@@ -23,6 +23,6 @@ public class CalculController {
 
     @FXML
     protected void onClicked(){
-        response.setText("I am clicked");
+        response.setText("I am clicked here !");
     }
 }
