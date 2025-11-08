@@ -70,7 +70,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.hellofx2/com.example.hellofx2.HelloApplication</mainClass>
+                            <mainClass>com.example.hellofx2/com.example.hellofx2.app.CalculApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
