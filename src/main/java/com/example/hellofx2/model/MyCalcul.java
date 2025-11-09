@@ -44,7 +44,7 @@ public class MyCalcul {
         try {
             this.setValue1(Integer.parseInt(value1Front));
         } catch (Exception e) {
-            throw new Exception("Error on setting value1. Error : " + e.getMessage());
+            throw new Exception("Error on setting value1 : " + e.getMessage());
         }
     }
 
@@ -52,7 +52,7 @@ public class MyCalcul {
         try {
             this.setValue2(Integer.parseInt(value2Front));
         } catch (Exception e) {
-            throw new Exception("Error on setting value1. Error : " + e.getMessage());
+            throw new Exception("Error on setting value2 : " + e.getMessage());
         }
     }
 }
