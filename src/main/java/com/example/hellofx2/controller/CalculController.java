@@ -1,10 +1,9 @@
 package com.example.hellofx2.controller;
 
+import com.example.hellofx2.model.MyCalcul;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.layout.Region;
 
 public class CalculController {
 
@@ -23,6 +22,17 @@ public class CalculController {
 
     @FXML
     protected void onClicked(){
-        response.setText("I am clicked here !");
+        try {
+            MyCalcul calcul = new MyCalcul(value1.getText(), value2.getText());
+            int result = calcul.calculate(chooseOperation.getValue());
+            response.setText("Response: " + result);
+        } catch (Exception e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
+            alert.getDialogPane().setMinWidth(Region.USE_PREF_SIZE);
+
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
+        }
     }
 }
