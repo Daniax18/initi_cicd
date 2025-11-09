@@ -9,7 +9,7 @@ public class MyCalcul {
         if(typeCalcul.equalsIgnoreCase("+")){
             return this.getValue1() + this.getValue2();
         }else{
-            return this.getValue1() - this.getValue2();
+            return this.getValue1() * this.getValue2();
         }
     }
 
