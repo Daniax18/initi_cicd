@@ -16,7 +16,7 @@ public class CalculController {
 
     @FXML
     public void initialize(){
-        chooseOperation.getItems().addAll("+", "-");
+        chooseOperation.getItems().addAll("+", "-", "*");
         chooseOperation.setValue("+");
     }
 

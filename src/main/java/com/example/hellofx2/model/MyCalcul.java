@@ -8,10 +8,14 @@ public class MyCalcul {
     public int calculate(String typeCalcul){
         if(typeCalcul.equalsIgnoreCase("+")){
             return this.getValue1() + this.getValue2();
+        }else if (typeCalcul.equalsIgnoreCase("*")){
+            return this.getValue1() * this.getValue2();
         }else{
             return this.getValue1() - this.getValue2();
         }
     }
+
+
 
     // Constructor
     public MyCalcul(String value1, String value2) throws Exception{
