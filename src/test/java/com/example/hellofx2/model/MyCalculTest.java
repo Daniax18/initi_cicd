@@ -10,6 +10,7 @@ class MyCalculTest {
     void calculate() throws Exception{
         MyCalcul calcul = new MyCalcul("5", "4");
         assertEquals(9, calcul.calculate("+"));
-        assertEquals(1, calcul.calculate("1"));
+        assertEquals(1, calcul.calculate("-"));
+        assertEquals(20, calcul.calculate("*"));
     }
 }
